@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.expense-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+#expenses-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
