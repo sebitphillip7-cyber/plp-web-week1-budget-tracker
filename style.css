@@ -1,19 +1,148 @@
+
+/* General page styling */
 body {
     background-color: lightgray;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
     color: darkblue;
 }
 
+/* Add Expense form section */
 .expense-section {
-    background-color: white;
+    max-width: 600px;
+    margin: 25px 20px;
     padding: 20px;
-    margin: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
 }
 
-#expenses-section {
+/* Form heading */
+.expense-section h2 {
+    color: #1e3a8a;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Arrange form controls vertically */
+.expense-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style form labels */
+.expense-section label {
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Style inputs and dropdown */
+.expense-section input,
+.expense-section select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Advanced selector: negation pseudo-class */
+.expense-section input:not([type="submit"]) {
+    background-color: #ffffff;
+}
+
+/* Advanced selector: focus pseudo-class */
+.expense-section input:focus,
+.expense-section select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* Style the Add Expense button */
+.expense-section button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.expense-section button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Expense table */
+.expenses-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table headings and cells */
+.expenses-section th,
+.expenses-section td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Blue table header */
+.expenses-section thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Advanced selector: descendant selector */
+.expenses-section td {
+    color: #334155;
+}
+
+/* Advanced selector: positional pseudo-class */
+.expenses-section tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Table hover effect */
+.expenses-section tbody tr:hover {
+    background-color: #bfdbfe;
+}
+
+/* Video section */
+.video-section {
     background-color: white;
     padding: 20px;
     margin: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+/* Help section */
+.help-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Clickable help heading */
+.help-section summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #1e3a8a;
 }
